@@ -11,5 +11,6 @@ public class ArraylistDemo {
         int[] v = new int[5];
         ArrayList<Integer> aj = (ArrayList) List.of(v);
         System.out.println();
+
     }
 }
