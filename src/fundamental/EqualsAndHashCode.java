@@ -8,6 +8,8 @@ public class EqualsAndHashCode {
 
     // Custom class with overridden equals() and hashCode()
     static class Person {
+
+        int[] a = {1,2,3};
         int id;
         String name;
 

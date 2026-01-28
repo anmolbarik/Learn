@@ -1,0 +1,7 @@
+HTTP METHOD -  URLS
+Get - /device
+Get - /device/{id}
+Post - /device
+Put - /device/{id}
+Delete - /device/{id}
+
