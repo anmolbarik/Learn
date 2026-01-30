@@ -63,6 +63,13 @@ public class Inheritence {
         // Demonstrate super keyword
         System.out.println("\n--- Using super Keyword ---");
         dog.showAnimalType();
+
+       // Dog ddd = new Animal(); // This will cause a compilation error
+        Animal badabox = new Dog();
+        //// This will cause a compilation error
+        badabox.eat(); // Calls Dog's overridden eat() method
+            //badabox.bark(); // This will cause a compilation error
+
     }
 }
 
@@ -146,4 +153,6 @@ class Cat extends Animal {
     void meow() {
         System.out.println("Cat meows: Meow!");
     }
+
+
 }
