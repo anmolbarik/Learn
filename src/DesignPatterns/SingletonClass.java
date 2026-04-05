@@ -6,21 +6,12 @@ It will Return the same instance every time it is called.
 **/
 
 public class SingletonClass {
-
-
     private SingletonClass() {
     }
-
-    private static SingletonClass singletonObject = null;
-
-
     public static  SingletonClass createNewInstance() {
-
-            if(singletonObject == null){
-                singletonObject =  new SingletonClass();
-            }
-
-        return singletonObject;
+        return SingletonHelper.singletonClass;
     }
-
+    public static class SingletonHelper{
+        public static final SingletonClass singletonClass = new SingletonClass();
+    }
 }
